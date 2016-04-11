@@ -14,7 +14,7 @@ ACTIVITIES
 
   Use a RecyclerView with a SwipeToAction adapter for each item
 
-  ![Demo](screenshots/swipe.png)
+  ![Demo](screenshots/swipe1.png)
   
   *NEW ELEMENT
   
