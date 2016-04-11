@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yassine.sunlamp" >
+
+    <!-- Questo feature è da omettere nel caso in cui si voglia far utilizzare l'app anche sui dispositivi che non supportano il bluetooth LE -->
+
+    <user-permission android:name="android.permission.BLUETOOTH" />
+    <user-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- Permesso utilizzo gps -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Permesso utilizzo internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+
+    <!-- Richiesta permesso utilizzo fotocamera -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".MyBaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DataListViewActivity"
+            android:label="@string/title_activity_data_list_view" >
+        </activity>
+        <activity
+            android:name=".ViewSingleItemActivity"
+            android:label="@string/title_activity_view_single_item"
+            android:parentActivityName=".MainTabbedActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:screenOrientation="portrait"
+                android:value=".MainTabbedActivity" />
+        </activity>
+        <activity
+            android:name=".Bluetooth.Scanner.DeviceScanActivity"
+            android:label="@string/title_activity_device_scan"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" >
+        </activity>
+        <activity
+            android:name=".AddNewItemActivity"
+            android:label="@string/title_activity_add_new_item"
+            android:parentActivityName=".MainTabbedActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainTabbedActivity" />
+        </activity>
+        <activity
+            android:name=".MainTabbedActivity"
+            android:label="@string/title_activity_main__tabbed_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Bluetooth.Scanner.LeDeviceScanActivity"
+            android:label="@string/title_activity_le_device_scan"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search">
+            <intent-filter>
+                <action android:name="ANDROID.INTENT.ACTION.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainTabbedActivity" />
+        </activity>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+    </application>
+
+</manifest>

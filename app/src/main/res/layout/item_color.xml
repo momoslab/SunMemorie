@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/item_list">
+
+    <!-- this view reveals when swipe right -->
+    <RelativeLayout
+        android:tag="reveal-right"
+        android:background="@color/carota"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_favorite_white_24dp"/>
+    </RelativeLayout>
+
+    <!-- this is the item front view -->
+    <RelativeLayout
+        android:tag="front"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingRight="6dp"
+            android:background="@color/transparent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:id="@+id/list_item_thumbnail"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_placeholder"
+                    />
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/element_name"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="16dp"
+                    android:textSize="16dp"
+                    android:paddingTop="1dp"
+                    android:layout_gravity="right"
+                    android:focusableInTouchMode="false"
+                    android:maxHeight="40dp"
+                    android:layout_marginTop="1dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/element_description"
+                    android:paddingTop="1dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_gravity="right"
+                    android:textStyle="italic"
+                    android:paddingLeft="16dp"
+                    android:maxHeight="40dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="1dp"
+                    android:id="@+id/element_position"
+                    android:layout_gravity="left"
+                    android:maxHeight="40dp"
+                    android:layout_marginBottom="3dp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/time_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="#"
+                    android:id="@+id/item_creation_time"
+                    android:layout_gravity="left|center"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textSize="10dp"
+                    android:textColor="#1a3049"
+                    android:layout_marginTop="13dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

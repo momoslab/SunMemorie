@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black_semi_transparent">#46000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    <color name="sunset_orange">#F02F00</color>
+    <color name="sunset_orange_pressed">#BA2400</color>
+    <color name="transparent">#00000000</color>
+    <color name="tabbed_color">#434343</color>
+    <color name="text_white">#ffffff</color>
+    <color name="save_green">#00C7A0</color>
+    <color name="status_bar_green">#00C7A0</color>
+    <color name="status_bar_red">#ec407a</color>
+    <color name="tabbed_color_transparent">#99434343</color>
+    <color name="border_color">#00C7A0</color>
+    <color name="main_background">#FFFFFF</color>
+    <color name="transparent_white">#3dffffff</color>
+    <color name="blue_pressed">#00C7A0</color>
+    <color name="black">#000000</color>
+    <color name="turquese">#1abc9c</color>
+    <color name="carota">#e67e22</color>
+    <color name="carota_transparent">#58e67e22</color>
+    <color name="cool_blue">#2980b9</color>
+    <color name="cool_red">#e74c3c</color>
+
+</resources>

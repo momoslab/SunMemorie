@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Sun Memories</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="data_title_string">data</string>
+    <string name="title_activity_table_view">Lista</string>
+    <string name="title_activity_color_chooser">ColorChooser</string>
+    <string name="title_activity_bt">BTActivity</string>
+    <string name="title_activity_data_list_view">Lista</string>
+    <string name="eliminaItem">Elimina</string>
+    <string name="title_activity_view_single_item">Elemento</string>
+    <string name="title_activity_device_scan">Scansione</string>
+    <string name="title_activity_test_tabbed_activity">test_tabbed_activity</string>
+
+    <!-- Titoli delle sezioni -->
+    <string name="title_my_favorite">My Favorite</string>
+    <string name="title_my_list">My SUNS</string>
+    <string name="title_activity_main__tabbed_">Sun Memories</string>
+
+    <!--Bluetooth strings-->
+    <string name="no_paired">Nessun dipositivo trovato!</string>
+    <string name="title_activity_add_new_item">Nuovo</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="unknown_device">Dispositivo sconosciuto</string>
+
+    <!--Dialogo-->
+    <string name="bluetooth_dialog_title">Scegli Dispositivo Bluetooth</string>
+    <string name="title_activity_le_device_scan">LeDeviceScanActivity</string>
+
+    <!--Search-->
+    <string name="search_hint">Cerca...</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="action_search">Cerca</string>
+    <string name="action_share">Condividi</string>
+    <string name="action_done">Salva</string>
+    <string name="remove_item">Elimina</string>
+    <string name="favorite_item">Mi piace</string>
+    <string name="favorite_item_not">Non mi piace</string>
+
+</resources>

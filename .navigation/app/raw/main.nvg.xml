@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"
+        className = "com.example.yassine.sunlamp.MainActivity"/>
+      <point
+        x = "64"
+        y = "56"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.yassine.sunlamp.DataListViewActivity"/>
+      <point      
+        x = "2312"      
+        y = "584"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.yassine.sunlamp.ViewSingleItemActivity"/>
+      <point      
+        x = "2552"      
+        y = "32"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.yassine.sunlamp.Bluetooth.Scanner.DeviceScanActivity"/>
+      <point      
+        x = "788"      
+        y = "1124"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.yassine.sunlamp.test_tabbed_activity"/>
+      <point      
+        x = "1452"      
+        y = "16"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.yassine.sunlamp.BTActivity"/>
+      <point      
+        x = "1008"      
+        y = "332"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.yassine.sunlamp.ColorChooser"/>
+      <point      
+        x = "800"      
+        y = "400"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

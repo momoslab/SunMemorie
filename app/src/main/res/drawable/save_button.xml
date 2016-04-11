@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape  android:shape="rectangle">
+            <solid android:color="@color/save_green"></solid>
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/ic_check_white_24dp"
+            android:gravity="center"></bitmap>
+    </item>
+
+    <item>
+        <shape
+            android:shape="oval"
+            android:padding="20dp"
+            >
+            <size android:width="50dp"
+                android:height="50dp"></size>
+        </shape>
+    </item>
+</layer-list>
